@@ -1,0 +1,98 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../datasets/coco128  # dataset root dir
+train: /content/drive/MyDrive/Dataset/images/train  # train images (relative to 'path') 128 images
+val: /content/drive/MyDrive/Dataset/images/val  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+nc: 77  # number of classes
+names: ['200m',
+        '50-100m',
+        'Ahead-Left',
+        'Ahead-Right',
+        'Axle-load-limit',
+        'Barrier Ahead',
+        'Bullock Cart Prohibited',
+        'Cart Prohobited',
+        'Cattle',
+        'Compulsory Ahead',
+        'Compulsory Keep Left',
+        'Compulsory Left Turn',
+        'Compulsory Right Turn',
+        'Cross Road',
+        'Cycle Crossing',
+        'Compulsory Cycle Track',
+        'Cycle Prohibited',
+        'Dangerous Dip',
+        'Falling Rocks',
+        'Ferry',
+        'Gap in median',
+        'Give way',
+        'Hand cart prohibited',
+        'Height limit',
+        'Horn prohibited',
+        'Humpy Road',
+        'Left hair pin bend',
+        'Left hand curve',
+        'Left Reverse Bend',
+        'Left turn prohibited',
+        'Length limit',
+        'Load limit 5T',
+        'Loose Gravel',
+        'Major road ahead',
+        'Men at work',
+        'Motor vehicles prohibited',
+        'Nrrow bridge',
+        'Narrow road ahead',
+        'Straight prohibited',
+        'No parking',
+        'No stoping',
+        'One way sign',
+        'Overtaking prohibited',
+        'Pedestrian crossing',
+        'Pedestrian prohibited',
+        'Restriction ends sign',
+        'Right hair pin bend',
+        'Right hand curve',
+        'Right Reverse Bend',
+        'Right turn prohibited',
+        'Road wideness ahead',
+        'Roundabout',
+        'School ahead',
+        'Side road left',
+        'Side road right',
+        'Slippery road',
+        'Compulsory sound horn',
+        'Speed limit',
+        'Staggred intersection',
+        'Steep ascent',
+        'Steep descent',
+        'Stop',
+        'Tonga prohibited',
+        'Truck prohibited',
+        'Compulsory turn left ahead',
+        'Compulsory right turn ahead',
+        'T-intersection',
+        'U-turn prohibited',
+        'Vehicle prohibited in both directions',
+        'Width limit',
+        'Y-intersection',
+        'Sign_C',
+        'Sign_T',
+        'Sign_S',
+        'No entry',
+        'Compulsory Keep Right',
+        'Parking']  # class names
+
+
+# Download script/URL (optional)
+download: https://ultralytics.com/assets/coco128.zip
